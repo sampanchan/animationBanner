@@ -1,0 +1,116 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+
+/* 
+If you want to add partials, use Sass Modules via @use:
+@use 'variables';
+
+Usage: partial-name.variable/mixin/function-name:
+background: variables.$primary-color;
+*/
+
+@use 'reset';
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(0, 0, 0);
+	font-family: 'Teko', sans-serif;
+}
+
+/* 2. Content ================================= */
+
+.banner-container{
+	background: rgb(170, 18, 18);
+	height: 600px;
+	width: 160px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	margin-top: 10%;
+	border: 1px solid #777;
+	.logo-container{
+		>h1{
+		color: white;
+		top: -20%;
+		left:18%;
+		position: absolute;
+	}
+	.logo-border{
+		width:120px;
+		height: 50px;
+		background: transparent;
+		border: 4px solid white;
+		border-radius: 10%;
+		top: 33%;
+		left:12%;
+		position: absolute;
+	}
+	img{
+		width:80px;
+		height: auto;
+		position: absolute;
+		top: 45%;
+		left:25%;
+		opacity: 0%;
+	}
+	>h2{
+		color:white;
+		top: 60%;
+		left:27%;
+		position: absolute;
+	}
+
+	} 
+	
+	.switch-characters{
+		
+		img{
+			width: 150px;
+			height: auto;
+		}
+		.switch{
+			position: absolute;
+			top:-30%;
+			left: 5%;
+		}
+		.pika{
+			position: absolute;
+			top:-30%;
+			left: 5%;
+			transform: rotate(180deg);
+		}
+		// .animal-crossing{
+		// 	position: absolute;
+		// 	top:100%;
+		// 	left: 5%;
+		// }
+		.mario{
+			position: absolute;
+			top:100%;
+			left: 5%;
+			
+		}
+
+	}
+
+
+}
